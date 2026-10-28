@@ -1,0 +1,89 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #121212;
+  color: #e8e8e8;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+.app {
+  width: 100%;
+  max-width: 480px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.add {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.add input {
+  flex: 1;
+  padding: 12px 14px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #1e1e1e;
+  color: #e8e8e8;
+  font-size: 1rem;
+}
+
+.add input:focus {
+  outline: none;
+  border-color: #4f8cff;
+}
+
+.add button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #4f8cff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.add button:hover { background: #3a74e0; }
+
+.list { list-style: none; }
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  background: #1e1e1e;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.list li.done .text {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.list .text { flex: 1; cursor: pointer; }
+
+.list .del {
+  border: none;
+  background: transparent;
+  color: #ff6b6b;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.empty {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+}
